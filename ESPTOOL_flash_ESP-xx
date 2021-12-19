@@ -1,0 +1,13 @@
+
+Sudo pip3 install rshell
+
+Commandes pour flasher un ESP32
+ 
+esptool.py --chip esp32 --port /dev/tty.usbserial-0001 erase_flash
+esptool.py --chip esp32 --port /dev/tty.usbserial-0001 --baud 460800 write_flash -z 0x1000 esp32-20210623-v1.16.bin
+
+
+Commandes pour flasher un ESP8266
+
+esptool.py --port /dev/ttyUSB0 erase_flash
+esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 esp8266-20210618-v1.16.bin
