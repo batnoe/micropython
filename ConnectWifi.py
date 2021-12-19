@@ -5,8 +5,8 @@ def connect():
     subnet    = '255.255.255.0'
     gateway   = '192.168.8.1'
     dns       = '192.168.8.1'
-    ssid      = "DNA-Mokkula-2G-7M3EQF"
-    password  =  "47890783266"
+    ssid      = ""
+    password  =  ""
 
     station = network.WLAN(network.STA_IF)
 
